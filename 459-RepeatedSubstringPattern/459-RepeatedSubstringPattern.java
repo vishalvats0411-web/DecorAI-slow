@@ -1,4 +1,4 @@
-// Last updated: 14/07/2026, 10:02:01
+// Last updated: 14/07/2026, 14:15:22
 1class Solution {
 2    public boolean repeatedSubstringPattern(String s) {
 3        int n=s.length();
