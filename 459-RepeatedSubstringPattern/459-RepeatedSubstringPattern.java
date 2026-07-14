@@ -1,4 +1,4 @@
-// Last updated: 14/07/2026, 09:42:37
+// Last updated: 14/07/2026, 09:49:48
 1class Solution {
 2    public boolean repeatedSubstringPattern(String s) {
 3        int n=s.length();
@@ -8,16 +8,17 @@
 7            {
 8                String compare="";
 9                int appendtimes=n/i;
-10                for(int j=1;j<=appendtimes;j++)
-11                {
-12                    compare+=s.substring(0,i);
-13                }
-14                if(compare.equals(s))
-15                {
-16                    return true;
-17                }
-18            }
-19        }
-20        return false;
-21    }
-22}
+10                String pattern=s.substring(0,i);
+11                for(int j=1;j<=appendtimes;j++)
+12                {
+13                    compare+=pattern;
+14                }
+15                if(compare.equals(s))
+16                {
+17                    return true;
+18                }
+19            }
+20        }
+21        return false;
+22    }
+23}
