@@ -1,4 +1,4 @@
-// Last updated: 16/07/2026, 13:20:42
+// Last updated: 16/07/2026, 13:21:27
 1/**
 2 * Definition for singly-linked list.
 3 * public class ListNode {
@@ -16,7 +16,7 @@
 15        ListNode odd=head;
 16        ListNode nextHead=head.next;
 17        ListNode even=nextHead;
-18        while(odd!=null && even!=null && odd.next!=null && even.next!=null && odd.next.next!=null )
+18        while(even!=null && even.next!=null )
 19        {
 20            odd.next=odd.next.next;
 21            even.next=even.next.next;
