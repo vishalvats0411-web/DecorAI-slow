@@ -1,4 +1,4 @@
-// Last updated: 20/07/2026, 22:14:32
+// Last updated: 21/07/2026, 22:20:04
 1class Solution {
 2    public int[] twoSum(int[] nums, int target) {
 3        int [] ans=new int[2];
